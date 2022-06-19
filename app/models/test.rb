@@ -14,7 +14,7 @@ class Test < ApplicationRecord
 
   # Возвращает массив названий тестов в заданной категории по title
   # => ["Основы баз данных", ...]
-  def self.category(category_title)
+  def self.with_title_category(category_title)
     with_category(category_title).by_title.pluck('title')
   end
 end

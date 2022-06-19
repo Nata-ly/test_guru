@@ -5,6 +5,10 @@ class Test < ApplicationRecord
   has_many :users, through: :progresses
   belongs_to :writer, class_name: :User
 
+  validates :title, presence: true
+  validates :level, numericality: { only_integer: true }
+  validates :title, uniqueness: { scope: :level, message: 'no unique' }
+
   scope :simple, -> { where(level: 0..1) }
   scope :medium, -> { where(level: 2..4) }
   scope :difficult, -> { where(level: 5..Float::INFINITY) }

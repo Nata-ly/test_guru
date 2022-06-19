@@ -3,6 +3,9 @@ class User < ApplicationRecord
   has_many :tests, through: :progresses
   has_many :written, class_name: :Test, inverse_of: :writer, foreign_key: :writer_id
 
+  validates :email, presence: true
+  validates :username, presence: true
+
   enum role: {
     admin: 0,
     user: 1,

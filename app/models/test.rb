@@ -9,12 +9,12 @@ class Test < ApplicationRecord
   scope :medium, -> { where(level: 2..4) }
   scope :difficult, -> { where(level: 5..Float::INFINITY) }
 
+  scope :with_category, ->(category_title) { joins(:category).where(category: { title: category_title }) }
+  scope :by_title, -> { order(title: :desc) }
+
   # Возвращает массив названий тестов в заданной категории по title
   # => ["Основы баз данных", ...]
   def self.category(category_title)
-    Test.joins('JOIN categories ON tests.category_id = categories.id')
-    .where('categories.title = ?', category_title)
-    .order('tests.title': :desc)
-    .pluck('tests.title')
+    with_category(category_title).by_title.pluck('title')
   end
 end

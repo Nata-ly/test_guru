@@ -10,7 +10,6 @@ class User < ApplicationRecord
   }
 
   def passed_test(level)
-    Test.joins('JOIN progresses ON tests.id = progresses.test_id')
-    .where('progresses.user_id = ? AND tests.level = ?', self.id, level)
+    tests.where(level: level)
   end
 end

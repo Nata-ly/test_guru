@@ -6,11 +6,6 @@ class Answer < ApplicationRecord
 
   MAX_ANSWER = 4
 
-  enum correct: {
-    false: 0,
-    true: 1
-  }
-
   scope :corrects, -> { where(correct: :true) }
 
   private

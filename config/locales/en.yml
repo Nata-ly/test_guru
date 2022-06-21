@@ -19,8 +19,9 @@ en:
       delete_question: 'Delete'
       edit_question: 'Edit'
       back: 'Back'
-    form_new:
-      h1: 'Add question'
+    form:
+      h1_new: 'Add %{title} question'
+      h1_edit: 'Edit %{title} question'
       body: 'Body:'
       submit: 'Save'
 

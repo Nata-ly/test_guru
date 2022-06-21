@@ -19,8 +19,9 @@ ru:
       delete_question: 'Удалить'
       edit_question: 'Изменить'
       back: 'Назад'
-    form_new:
-      h1: 'Добавить вопрос:'
+    form:
+      h1_new: 'Добавить к тесту %{title} вопрос:'
+      h1_edit: 'Изменить у теста %{title} вопрос:'
       body: 'Вопрос:'
       submit: 'Сохранить'
 

@@ -17,11 +17,12 @@ ru:
     button:
       add_question: 'Добавить вопрос'
       delete_question: 'Удалить'
+      edit_question: 'Изменить'
       back: 'Назад'
     form_new:
       h1: 'Добавить вопрос:'
       body: 'Вопрос:'
-      submit: 'Добавить'
+      submit: 'Сохранить'
 
   error:
     rescue_with_test_not_found: 'Тест не найден'

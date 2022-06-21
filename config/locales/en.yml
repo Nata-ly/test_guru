@@ -17,11 +17,12 @@ en:
     button:
       add_question: 'Add question'
       delete_question: 'Delete'
+      edit_question: 'Edit'
       back: 'Back'
     form_new:
       h1: 'Add question'
       body: 'Body:'
-      submit: 'Create'
+      submit: 'Save'
 
   error:
     rescue_with_test_not_found: 'Not found'

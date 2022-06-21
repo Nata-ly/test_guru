@@ -9,6 +9,6 @@ p = link_to t('questions_page.button.add_question'), new_test_question_path(@tes
 table
   tr
     th = t('questions_page.table.id_1')
-    th = t('questions_page.table.id_2')
+    th colspan = "2" = t('questions_page.table.id_2')
 
   = render @test.questions

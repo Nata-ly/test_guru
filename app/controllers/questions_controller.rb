@@ -16,8 +16,12 @@ class QuestionsController < ApplicationController
   end
 
   def create
-    @question = @test.questions.create(question_params)
-    redirect_to test_questions_path(@question.test)
+    @question = @test.questions.new(question_params)
+    if @question.save
+      redirect_to test_questions_path(@question.test)
+    else
+      render :new
+    end
   end
 
   def destroy

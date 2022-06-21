@@ -4,6 +4,13 @@
 
 <%= form_with model: [@test, @test.questions.build] do |form| %>
   <p>
+    <% if @question.present? %>
+      <% @question.errors.full_messages.each do |message| %>
+        <div> <%= message %> </div>
+      <% end %>
+    <% end %>
+  </p>
+  <p>
     <%= form.label :body, t('questions_page.form_new.body') %>
     <%= form.text_area :body %>
   </p>

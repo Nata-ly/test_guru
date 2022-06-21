@@ -10,9 +10,14 @@ ru:
       id_4: 'Действия'
       show: 'Показать'
   questions_page:
-    h1: 'Список вопросов:'
-    add_question: 'Добавить вопрос'
-    delete_question: 'Удалить'
+    h2: 'Список вопросов:'
+    table:
+      id_1: 'Вопросы'
+      id_2: 'Действия'
+    button:
+      add_question: 'Добавить вопрос'
+      delete_question: 'Удалить'
+      back: 'Назад'
     form_new:
       h1: 'Добавить вопрос:'
       body: 'Вопрос:'

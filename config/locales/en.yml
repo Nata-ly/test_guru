@@ -10,9 +10,14 @@ en:
       id_4: 'Action'
       show: 'Show'
   questions_page:
-    h1: 'List questions:'
-    add_question: 'Add question'
-    delete_question: 'Delete'
+    h2: 'List questions:'
+    table:
+      id_1: 'Question'
+      id_2: 'Action'
+    button:
+      add_question: 'Add question'
+      delete_question: 'Delete'
+      back: 'Back'
     form_new:
       h1: 'Add question'
       body: 'Body:'

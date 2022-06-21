@@ -1,0 +1,13 @@
+<h1>
+  <%= t('questions_page.form_new.h1') %>
+</h1>
+
+<%= form_with model: [@test, @test.questions.build] do |form| %>
+  <p>
+    <%= form.label :body, t('questions_page.form_new.body') %>
+    <%= form.text_area :body %>
+  </p>
+
+  <%= form.submit value= t('questions_page.form_new.submit') %>
+
+<% end %>

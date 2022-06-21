@@ -25,5 +25,13 @@ ru:
       body: 'Вопрос:'
       submit: 'Сохранить'
 
+  footer:
+    year: 'Год - %{year}'
+    autoor: 'Nata-ly'
+    project_name: 'Test-Guru'
+    project_about: 'Приложение преднозначено для создания, управления и выполнения различных тестов.'
+    thinknetica_html: "Учебный проект в онлайн школе <a href='www.thinknetica.com' target='_blank'>www.thinknetica.com</a>"
+    repo: 'https://github.com/Nata-ly/test_guru'
+
   error:
     rescue_with_test_not_found: 'Тест не найден'

@@ -3,6 +3,12 @@ en:
 
   tests_page:
     h1: 'All tests:'
+    table:
+      id_1: 'Tests'
+      id_2: 'Category'
+      id_3: 'Question count'
+      id_4: 'Action'
+      show: 'Show'
   questions_page:
     h1: 'List questions:'
     add_question: 'Add question'

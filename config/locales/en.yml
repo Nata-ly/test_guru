@@ -28,11 +28,8 @@ en:
 
   footer:
     year: 'Year - %{year}'
-    autoor: 'Nataly'
-    project_name: 'TestGuru'
     project_about: 'Application designed to create, manage and run various tests.'
     thinknetica_html: "Online school project <a href='www.thinknetica.com' target='_blank'>www.thinknetica.com</a>"
-    repo: 'https://github.com/Nata-ly/test_guru'
 
   error:
     rescue_with_test_not_found: 'Not found'

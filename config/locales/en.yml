@@ -3,14 +3,35 @@ en:
 
   tests_page:
     h1: 'All tests:'
+    table:
+      id_1: 'Tests'
+      id_2: 'Category'
+      id_3: 'Question count'
+      id_4: 'Action'
+      show: 'Show'
   questions_page:
-    h1: 'List questions:'
-    add_question: 'Add question'
-    delete_question: 'Delete'
-    form_new:
-      h1: 'Add question'
+    h2: 'List questions:'
+    table:
+      id_1: 'Question'
+      id_2: 'Action'
+    button:
+      add_question: 'Add question'
+      delete_question: 'Delete'
+      edit_question: 'Edit'
+      back: 'Back'
+    form:
+      h1_new: 'Add %{title} question'
+      h1_edit: 'Edit %{title} question'
       body: 'Body:'
-      submit: 'Create'
+      submit: 'Save'
+
+  footer:
+    year: 'Year - %{year}'
+    autoor: 'Nataly'
+    project_name: 'TestGuru'
+    project_about: 'Application designed to create, manage and run various tests.'
+    thinknetica_html: "Online school project <a href='www.thinknetica.com' target='_blank'>www.thinknetica.com</a>"
+    repo: 'https://github.com/Nata-ly/test_guru'
 
   error:
     rescue_with_test_not_found: 'Not found'

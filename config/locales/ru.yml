@@ -3,14 +3,35 @@ ru:
 
   tests_page:
     h1: 'Все тесты:'
+    table:
+      id_1: 'Тест'
+      id_2: 'Категория'
+      id_3: 'Кол-во вопросов'
+      id_4: 'Действия'
+      show: 'Показать'
   questions_page:
-    h1: 'Список вопросов:'
-    add_question: 'Добавить вопрос'
-    delete_question: 'Удалить'
-    form_new:
-      h1: 'Добавить вопрос:'
+    h2: 'Список вопросов:'
+    table:
+      id_1: 'Вопросы'
+      id_2: 'Действия'
+    button:
+      add_question: 'Добавить вопрос'
+      delete_question: 'Удалить'
+      edit_question: 'Изменить'
+      back: 'Назад'
+    form:
+      h1_new: 'Добавить к тесту %{title} вопрос:'
+      h1_edit: 'Изменить у теста %{title} вопрос:'
       body: 'Вопрос:'
-      submit: 'Добавить'
+      submit: 'Сохранить'
+
+  footer:
+    year: 'Год - %{year}'
+    autoor: 'Nata-ly'
+    project_name: 'Test-Guru'
+    project_about: 'Приложение преднозначено для создания, управления и выполнения различных тестов.'
+    thinknetica_html: "Учебный проект в онлайн школе <a href='www.thinknetica.com' target='_blank'>www.thinknetica.com</a>"
+    repo: 'https://github.com/Nata-ly/test_guru'
 
   error:
     rescue_with_test_not_found: 'Тест не найден'

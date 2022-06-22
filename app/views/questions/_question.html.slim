@@ -1,0 +1,4 @@
+tr
+  td = link_to question.body, question_path(question)
+  td =  link_to t('questions_page.button.delete_question'), question_path(question), method: 'delete'
+  td =  link_to t('questions_page.button.edit_question'), edit_question_path(question)

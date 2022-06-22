@@ -1,5 +1,7 @@
 h1 = t('questions_show_page.h1', title: @question.test.title)
 
+p = link_to t('answers_page.button.back'), test_path(@question.test)
+
 h2 = @question.body
 
 p = t('answers_page.h2')

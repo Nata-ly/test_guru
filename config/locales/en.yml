@@ -4,16 +4,17 @@ en:
   tests_page:
     h1: 'All tests:'
     table:
-      id_1: 'Tests'
-      id_2: 'Category'
-      id_3: 'Question count'
-      id_4: 'Action'
-      show: 'Show'
+      th_1: 'Tests'
+      th_2: 'Category'
+      th_3: 'Question count'
+      th_4: 'Action'
+    button:
+      show_test: 'Show'
   questions_page:
     h2: 'List questions:'
     table:
-      id_1: 'Question'
-      id_2: 'Action'
+      th_1: 'Question'
+      th_2: 'Action'
     button:
       add_question: 'Add question'
       delete_question: 'Delete'

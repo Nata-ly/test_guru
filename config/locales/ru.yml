@@ -25,6 +25,24 @@ ru:
       h1_edit: 'Изменить у теста %{title} вопрос:'
       body: 'Вопрос:'
       submit: 'Сохранить'
+  questions_show_page:
+    h1: 'Тест: %{title}'
+  answers_page:
+    h2: 'Ответы:'
+    correct: 'Правильный:'
+    answer: 'Ответ:'
+    button:
+      add_answer: 'Добавить ответ'
+      show_answer: 'Показать'
+      delete_answer: 'Удалить'
+      edit_answer: 'Изменить'
+      back: 'Назад'
+    form:
+      h1_new: 'Добавить ответ к вопросу "%{title}"'
+      h1_edit: 'Изменить ответ у вопроса "%{title}"'
+      body: 'Ответ:'
+      correct: 'Правильный:'
+      submit: 'Сохранить'
 
   footer:
     year: 'Год - %{year}'

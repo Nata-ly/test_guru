@@ -12,6 +12,8 @@ en:
       show_test: 'Show'
   questions_page:
     h2: 'List questions:'
+    correct: 'Correct:'
+    answer: 'Answer:'
     table:
       th_1: 'Question'
       th_2: 'Action'
@@ -24,6 +26,22 @@ en:
       h1_new: 'Add %{title} question'
       h1_edit: 'Edit %{title} question'
       body: 'Body:'
+      submit: 'Save'
+  questions_show_page:
+    h1: 'Test: %{title}'
+  answers_page:
+    h2: 'Answers:'
+    button:
+      add_answer: 'Add answer'
+      show_answer: 'Show'
+      delete_answer: 'Delete'
+      edit_answer: 'Edit'
+      back: 'Back'
+    form:
+      h1_new: 'Add answer to %{title}:'
+      h1_edit: 'Edit answer to %{title} ответ:'
+      body: 'Answer:'
+      correct: 'Correct:'
       submit: 'Save'
 
   footer:

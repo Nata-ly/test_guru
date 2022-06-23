@@ -3,9 +3,9 @@ h1 = t('progresses_page.h1', title: @progress.test.title)
 p
   b = @progress.current_question.body
 p
-  = current_question_index(@progress)
+  = @progress.current_question_index
   = ' / '
-  = questions_count(@progress)
+  = @progress.questions_count
 
 = form_with url: progress_path(@progress), local: true, method: :put do |form|
   = form.collection_check_boxes :answer_id, @progress.current_question.answers, :id, :body,

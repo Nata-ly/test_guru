@@ -10,6 +10,7 @@ ru:
       th_4: 'Действия'
     button:
       show_test: 'Показать'
+      start_test: 'Пройти'
   questions_page:
     h2: 'Список вопросов:'
     table:
@@ -43,6 +44,12 @@ ru:
       body: 'Ответ:'
       correct: 'Правильный:'
       submit: 'Сохранить'
+  progresses_page:
+    h1: 'Прохождение теста: %{title}'
+    button:
+      next_question: 'Следующий'
+    result_successful: 'Тест пройден, правильных ответов %{result} %'
+    result_unsuccessful: 'Тест не пройден, правильных ответов %{result} %'
 
   footer:
     year: 'Год - %{year}'

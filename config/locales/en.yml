@@ -10,6 +10,7 @@ en:
       th_4: 'Action'
     button:
       show_test: 'Show'
+      start_test: 'Start'
   questions_page:
     h2: 'List questions:'
     correct: 'Correct:'
@@ -43,6 +44,12 @@ en:
       body: 'Answer:'
       correct: 'Correct:'
       submit: 'Save'
+  progresses_page:
+    h1: 'Passing the %{title}'
+    button:
+      next_question: 'Next'
+    result_successful: 'Test passed, percentage of correct answers %{result}'
+    result_unsuccessful: 'Test failed, percentage of correct answers %{result}'
 
   footer:
     year: 'Year - %{year}'

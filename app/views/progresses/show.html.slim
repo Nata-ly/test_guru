@@ -1,0 +1,17 @@
+h1 = t('progresses_page.h1', title: @progress.test.title)
+
+p
+  b = @progress.current_question.body
+p
+  = current_question_index(@progress)
+  = ' / '
+  = questions_count(@progress)
+
+= form_with url: progress_path(@progress), local: true, method: :put do |form|
+  = form.collection_check_boxes :answer_id, @progress.current_question.answers, :id, :body,
+  include_hidden: false do |b|
+    p
+      = b.check_box id: "answer_ids_#{b.object.id}"
+      = b.label
+  p
+    = form.submit t('progresses_page.button.next_question')

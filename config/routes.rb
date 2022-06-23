@@ -6,5 +6,15 @@ Rails.application.routes.draw do
     resources :questions, shallow: true, expect: :index do
       resources :answers, shallow: true, expect: :index
     end
+
+    member do
+      post :start
+    end
+  end
+
+  resources :progresses, only: %i[show update] do
+    member do
+      get :result
+    end
   end
 end

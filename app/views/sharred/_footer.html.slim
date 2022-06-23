@@ -1,8 +1,10 @@
-p
-  = t('footer.year', year: years_now)
-  = Rails.application.credentials[:footer][:autoor]
-  = github_url(Rails.application.credentials[:footer][:project_name], Rails.application.credentials[:footer][:repo])
-p
-  = t('footer.project_about')
-p
-  = t('footer.thinknetica_html')
+.footer-container
+  .col-1
+    = Rails.application.credentials[:footer][:autoor]
+    = ' | '
+    = github_url(Rails.application.credentials[:footer][:project_name], Rails.application.credentials[:footer][:repo])
+    br = t('footer.year', year: years_now)
+  .col-2
+    = t('footer.project_about')
+    br
+    = t('footer.thinknetica_html')

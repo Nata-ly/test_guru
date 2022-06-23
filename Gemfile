@@ -23,6 +23,8 @@ gem 'jbuilder', '~> 2.7'
 # gem 'bcrypt', '~> 3.1.7'
 # Use slim
 gem 'slim'
+# Use sass
+gem 'sass'
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 

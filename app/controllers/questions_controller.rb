@@ -9,7 +9,6 @@ class QuestionsController < ApplicationController
   end
 
   def show
-    render inline: '<%= @question.body %>'
   end
 
   def new

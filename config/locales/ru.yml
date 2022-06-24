@@ -4,16 +4,18 @@ ru:
   tests_page:
     h1: 'Все тесты:'
     table:
-      id_1: 'Тест'
-      id_2: 'Категория'
-      id_3: 'Кол-во вопросов'
-      id_4: 'Действия'
-      show: 'Показать'
+      th_1: 'Тест'
+      th_2: 'Категория'
+      th_3: 'Кол-во вопросов'
+      th_4: 'Действия'
+    button:
+      show_test: 'Показать'
+      start_test: 'Пройти'
   questions_page:
     h2: 'Список вопросов:'
     table:
-      id_1: 'Вопросы'
-      id_2: 'Действия'
+      th_1: 'Вопросы'
+      th_2: 'Действия'
     button:
       add_question: 'Добавить вопрос'
       delete_question: 'Удалить'
@@ -24,14 +26,35 @@ ru:
       h1_edit: 'Изменить у теста %{title} вопрос:'
       body: 'Вопрос:'
       submit: 'Сохранить'
+  questions_show_page:
+    h1: 'Тест: %{title}'
+  answers_page:
+    h2: 'Ответы:'
+    correct: 'Правильный:'
+    answer: 'Ответ:'
+    button:
+      add_answer: 'Добавить ответ'
+      show_answer: 'Показать'
+      delete_answer: 'Удалить'
+      edit_answer: 'Изменить'
+      back: 'Назад'
+    form:
+      h1_new: 'Добавить ответ к вопросу "%{title}"'
+      h1_edit: 'Изменить ответ у вопроса "%{title}"'
+      body: 'Ответ:'
+      correct: 'Правильный:'
+      submit: 'Сохранить'
+  progresses_page:
+    h1: 'Прохождение теста: %{title}'
+    button:
+      next_question: 'Следующий'
+    result_successful: 'Тест пройден, правильных ответов %{result} %'
+    result_unsuccessful: 'Тест не пройден, правильных ответов %{result} %'
 
   footer:
     year: 'Год - %{year}'
-    autoor: 'Nata-ly'
-    project_name: 'Test-Guru'
     project_about: 'Приложение преднозначено для создания, управления и выполнения различных тестов.'
     thinknetica_html: "Учебный проект в онлайн школе <a href='www.thinknetica.com' target='_blank'>www.thinknetica.com</a>"
-    repo: 'https://github.com/Nata-ly/test_guru'
 
   error:
     rescue_with_test_not_found: 'Тест не найден'

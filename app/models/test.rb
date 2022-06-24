@@ -1,6 +1,6 @@
 class Test < ApplicationRecord
   belongs_to :category
-  has_many :questions
+  has_many :questions, dependent: :destroy
   has_many :progresses
   has_many :users, through: :progresses
   belongs_to :writer, class_name: :User

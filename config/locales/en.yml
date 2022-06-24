@@ -50,6 +50,15 @@ en:
       next_question: 'Next'
     result_successful: 'Test passed, percentage of correct answers %{result}'
     result_unsuccessful: 'Test failed, percentage of correct answers %{result}'
+  users_page:
+    button:
+      back: 'Back'
+      submit: 'Save'
+    form:
+      login: 'Enter your login:'
+      email: 'Enter email:'
+      password: 'Enter password:'
+      password_confirmation: 'Confirm Password:'
 
   footer:
     year: 'Year - %{year}'
@@ -58,3 +67,6 @@ en:
 
   error:
     rescue_with_test_not_found: 'Not found'
+  flash:
+    message:
+      login: 'Are you Guru? Verify your Email and Password please!'

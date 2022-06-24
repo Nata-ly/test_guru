@@ -3,7 +3,7 @@ class User < ApplicationRecord
   has_many :tests, through: :progresses
   has_many :written, class_name: :Test, inverse_of: :writer, foreign_key: :writer_id
 
-  validates :email, presence: true
+  validates :email, presence: true, uniqueness: true
   validates :username, presence: true
 
   has_secure_password

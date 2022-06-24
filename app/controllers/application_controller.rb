@@ -1,10 +1,12 @@
 class ApplicationController < ActionController::Base
   helper_method :current_user
+  helper_method :loggen_in?
 
   private
 
   def authenticate_user!
     unless current_user
+      session[:referer] = request.url
       redirect_to login_path
     end
   end

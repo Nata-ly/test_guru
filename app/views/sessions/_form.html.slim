@@ -1,5 +1,5 @@
 = form_with url: sessions_path, local:true do |form|
-  = content_tag :p, flash[:alert], class: 'flash alert' if flash[:alert]
+  = flash_message
   p
     = form.label :email, t('users_page.form.email')
     = form.text_field :email, id: :email

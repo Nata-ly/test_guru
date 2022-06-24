@@ -64,7 +64,11 @@ en:
     year: 'Year - %{year}'
     project_about: 'Application designed to create, manage and run various tests.'
     thinknetica_html: "Online school project <a href='www.thinknetica.com' target='_blank'>www.thinknetica.com</a>"
-
+  header:
+    message:
+      logged_in: 'Welcome %{user} GURU'
+      not_logged_in: 'Logged in'
+      login_exit: 'Exit'
   error:
     rescue_with_test_not_found: 'Not found'
   flash:

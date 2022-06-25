@@ -1,5 +1,7 @@
 module SessionsHelper
   def flash_message
-    content_tag :p, flash[:alert], class: 'flash alert' if flash[:alert]
+    flash.map do |key, msg|
+      content_tag :p, msg, :class => "flash #{key}"
+    end.join()
   end
 end

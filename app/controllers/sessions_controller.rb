@@ -1,4 +1,5 @@
 class SessionsController < ApplicationController
+  skip_before_action :authenticate_user!
   def new
   end
 
@@ -7,8 +8,7 @@ class SessionsController < ApplicationController
 
     if user&.authenticate(params[:password])
       session[:user_id] = user.id
-      session[:referer].present? ? (redirect_to session[:referer]) : (redirect_to root_path)
-      session.delete(:referer)
+      redirect_to session.delete(:referer) || root_path
     else
       flash.now[:alert] = t('flash.message.login')
       render :new

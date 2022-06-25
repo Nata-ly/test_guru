@@ -1,4 +1,5 @@
 class TestsController < ApplicationController
+  skip_before_action :authenticate_user!, only: :index
   before_action :authenticate_user!, except: :index
   before_action :find_test, only: %i[show start]
 
@@ -10,9 +11,8 @@ class TestsController < ApplicationController
   end
 
   def start
-    @user = current_user
-    @user.tests.push(@test)
-    redirect_to @user.test_passage(@test)
+    current_user.tests.push(@test)
+    redirect_to current_user.test_passage(@test)
   end
 
   private

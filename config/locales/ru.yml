@@ -50,11 +50,27 @@ ru:
       next_question: 'Следующий'
     result_successful: 'Тест пройден, правильных ответов %{result} %'
     result_unsuccessful: 'Тест не пройден, правильных ответов %{result} %'
+  users_page:
+    button:
+      back: 'Назад'
+      submit: 'Сохранить'
+    form:
+      login: 'Введите логин:'
+      email: 'Введите email:'
+      password: 'Введите пароль:'
+      password_confirmation: 'Повторите пароль:'
 
   footer:
     year: 'Год - %{year}'
     project_about: 'Приложение преднозначено для создания, управления и выполнения различных тестов.'
     thinknetica_html: "Учебный проект в онлайн школе <a href='www.thinknetica.com' target='_blank'>www.thinknetica.com</a>"
-
+  header:
+    message:
+      logged_in: 'Добро пожаловать, %{user} GURU'
+      not_logged_in: 'Войти'
+      login_exit: 'Выйти'
   error:
     rescue_with_test_not_found: 'Тест не найден'
+  flash:
+    message:
+      login: 'Вы Guru? Залогиньтесь пожалуйста!'

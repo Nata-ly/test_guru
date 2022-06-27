@@ -50,11 +50,27 @@ en:
       next_question: 'Next'
     result_successful: 'Test passed, percentage of correct answers %{result}'
     result_unsuccessful: 'Test failed, percentage of correct answers %{result}'
+  users_page:
+    button:
+      back: 'Back'
+      submit: 'Save'
+    form:
+      login: 'Enter your login:'
+      email: 'Enter email:'
+      password: 'Enter password:'
+      password_confirmation: 'Confirm Password:'
 
   footer:
     year: 'Year - %{year}'
     project_about: 'Application designed to create, manage and run various tests.'
     thinknetica_html: "Online school project <a href='www.thinknetica.com' target='_blank'>www.thinknetica.com</a>"
-
+  header:
+    message:
+      logged_in: 'Welcome %{user} GURU'
+      not_logged_in: 'Logged in'
+      login_exit: 'Exit'
   error:
     rescue_with_test_not_found: 'Not found'
+  flash:
+    message:
+      login: 'Are you Guru? Verify your Email and Password please!'

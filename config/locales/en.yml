@@ -51,6 +51,16 @@ en:
     result_successful: 'Test passed, percentage of correct answers %{result}'
     result_unsuccessful: 'Test failed, percentage of correct answers %{result}'
   users_page:
+    sign_up_message: 'Sign up'
+    reset_confirmation_message: 'Resend confirmation instructions'
+    log_in_message: 'Log in'
+    remember_message: 'Remember me'
+    edit_message: 'Edit'
+    confirmation_message: 'Currently waiting confirmation for:'
+    blank_password_edit: "leave blank if you don't want to change it"
+    confirm_password_message: 'we need your current password to confirm your changes'
+    characters_minimum: 'characters minimum'
+    cansel_account: 'Cancel my account'
     button:
       back: 'Back'
       submit: 'Save'

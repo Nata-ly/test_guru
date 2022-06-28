@@ -1,0 +1,27 @@
+h2 = t('users_page.sign_up_message')
+
+= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f|
+  = render "devise/shared/error_messages", resource: resource
+
+  .field
+    = f.label :email, t('users_page.form.email')
+    br
+    = f.email_field :email, autofocus: true, autocomplete: "email"
+
+  .field
+    = f.label :password, t('users_page.form.password')
+    - if @minimum_password_length
+      em = " (#{@minimum_password_length} #{t('users_page.characters_minimum')})"
+    br
+    = f.password_field :password, autocomplete: "new-password"
+
+
+  .field
+    = f.label :password_confirmation, t('users_page.form.password_confirmation')
+    br
+    = f.password_field :password_confirmation, autocomplete: "new-password"
+
+  .actions
+    = f.submit t('users_page.button.submit')
+
+= render "devise/shared/links"

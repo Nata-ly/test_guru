@@ -51,6 +51,16 @@ ru:
     result_successful: 'Тест пройден, правильных ответов %{result} %'
     result_unsuccessful: 'Тест не пройден, правильных ответов %{result} %'
   users_page:
+    sign_up_message: 'Зарегистрироваться'
+    reset_confirmation_message: 'Повторно отправить инструкции по подтверждению'
+    log_in_message: 'Войти'
+    remember_message: 'Запомнить меня'
+    edit_message: 'Изменить'
+    confirmation_message: 'В настоящее время ожидается подтверждение для:'
+    blank_password_edit: 'оставьте пустым, если не хотите его менять'
+    confirm_password_message: 'нам нужен ваш текущий пароль, чтобы подтвердить ваши изменения'
+    characters_minimum: 'минимально'
+    cansel_account: 'Отменить мою учетную запись'
     button:
       back: 'Назад'
       submit: 'Сохранить'

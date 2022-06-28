@@ -17,12 +17,8 @@ class User < ApplicationRecord
 
   validates :email, presence: true, uniqueness: true
   validates_format_of :email, with: EMAIL_REGEX
-
-  enum role: {
-    admin: 0,
-    user: 1,
-    archived: 2
-  }
+  validates :first_name, presence: true
+  validates :last_name, presence: true
 
   def passed_test(level)
     tests.where(level: level)

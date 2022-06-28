@@ -75,6 +75,8 @@ en:
     form:
       login: 'Enter your login:'
       email: 'Enter email:'
+      first_name: 'Enter first name:'
+      last_name: 'Enter last name:'
       password: 'Enter password:'
       password_confirmation: 'Confirm Password:'
 
@@ -92,3 +94,4 @@ en:
   flash:
     message:
       login: 'Are you Guru? Verify your Email and Password please!'
+      after_create_flash: 'Hello, %{name}'

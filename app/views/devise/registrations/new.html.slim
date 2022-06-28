@@ -9,6 +9,16 @@ h2 = t('users_page.sign_up_message')
     = f.email_field :email, autofocus: true, autocomplete: "email"
 
   .field
+    = f.label :first_name, t('users_page.form.first_name')
+    br
+    = f.text_field :first_name, autofocus: true, autocomplete: "first_name"
+
+  .field
+    = f.label :last_name, t('users_page.form.last_name')
+    br
+    = f.text_field :last_name, autofocus: true, autocomplete: "last_name"
+
+  .field
     = f.label :password, t('users_page.form.password')
     - if @minimum_password_length
       em = " (#{@minimum_password_length} #{t('users_page.characters_minimum')})"

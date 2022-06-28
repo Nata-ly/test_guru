@@ -1,8 +1,0 @@
-li
-  = answer.body
-  br
-  = link_to t('answers_page.button.show_answer'), answer_path(answer)
-  = ' | '
-  = link_to t('answers_page.button.edit_answer'), edit_answer_path(answer)
-  = ' | '
-  = link_to t('answers_page.button.delete_answer'), answer_path(answer), method: :delete

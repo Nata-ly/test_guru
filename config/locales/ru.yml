@@ -8,9 +8,17 @@ ru:
       th_2: 'Категория'
       th_3: 'Кол-во вопросов'
       th_4: 'Действия'
+    form:
+      title: 'Введите название теста:'
+      select_category: 'Выберите категорию:'
     button:
+      add_test: 'Добавить новый тест'
+      delete_test: 'Удалить'
+      submit_test: 'Сохранить'
       show_test: 'Показать'
+      edit_test: 'Изменить'
       start_test: 'Пройти'
+      back: 'Назад'
   questions_page:
     h2: 'Список вопросов:'
     table:

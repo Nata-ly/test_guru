@@ -8,9 +8,17 @@ en:
       th_2: 'Category'
       th_3: 'Question count'
       th_4: 'Action'
+    form:
+      title: 'Enter test name:'
+      select_category: 'Select a category:'
     button:
+      add_test: 'Add new test'
+      delete_test: 'Delete'
+      submit_test: 'Save'
       show_test: 'Show'
+      edit_test: 'Edit'
       start_test: 'Start'
+      back: 'Back'
   questions_page:
     h2: 'List questions:'
     correct: 'Correct:'

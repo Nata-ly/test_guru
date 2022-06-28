@@ -27,4 +27,8 @@ class User < ApplicationRecord
   def test_passage(test)
     progresses.order(id: :desc).find_by(test_id: test.id)
   end
+
+  def admin?
+    is_a?(Admin)
+  end
 end

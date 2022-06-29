@@ -1,5 +1,5 @@
 h1 = question_header(@question)
 
-p = link_to t('questions_page.button.back'), admin_test_path(@question.test)
+p = link_to t('helpers.link.back'), admin_test_path(@question.test)
 
 = render 'form'

@@ -1,63 +1,83 @@
 ru:
-  hello: "Привет мир"
+  helpers:
+    submit:
+      create: 'Создать %{model}'
+      update: 'Обновить %{model}'
+      submit: 'Сохранить %{model}'
+    label:
+      user:
+        login: 'Введите логин:'
+        email: 'Введите email:'
+        first_name: 'Введите имя:'
+        last_name: 'Введите фамилию:'
+        password: 'Введите пароль:'
+        password_confirmation: 'Повторите пароль:'
+      test:
+        title: 'Название теста:'
+        level: 'Уровень:'
+        category_id: 'Категория:'
+      answer:
+        body: 'Ответ:'
+        correct: 'Правильный:'
+      question:
+        body: 'Вопрос:'
+    select:
+      prompt: 'Пожалуйста выберите'
+    link:
+      show: 'Показать'
+      edit: 'Изменить'
+      delete: 'Удалить'
+      back: 'Назад'
 
-  tests_page:
-    h1: 'Все тесты:'
-    table:
-      th_1: 'Тест'
-      th_2: 'Категория'
-      th_3: 'Кол-во вопросов'
-      th_4: 'Действия'
-    form:
-      title: 'Введите название теста:'
-      select_category: 'Выберите категорию:'
-    button:
-      add_test: 'Добавить новый тест'
-      delete_test: 'Удалить'
-      submit_test: 'Сохранить'
-      show_test: 'Показать'
-      edit_test: 'Изменить'
-      start_test: 'Пройти'
-      back: 'Назад'
-  questions_page:
-    h2: 'Список вопросов:'
-    table:
-      th_1: 'Вопросы'
-      th_2: 'Действия'
-    button:
-      add_question: 'Добавить вопрос'
-      delete_question: 'Удалить'
-      edit_question: 'Изменить'
-      back: 'Назад'
-    form:
-      h1_new: 'Добавить к тесту %{title} вопрос:'
-      h1_edit: 'Изменить у теста %{title} вопрос:'
-      body: 'Вопрос:'
-      submit: 'Сохранить'
-  questions_show_page:
-    h1: 'Тест: %{title}'
-  answers_page:
-    h2: 'Ответы:'
-    correct: 'Правильный:'
-    answer: 'Ответ:'
-    button:
-      add_answer: 'Добавить ответ'
-      show_answer: 'Показать'
-      delete_answer: 'Удалить'
-      edit_answer: 'Изменить'
-      back: 'Назад'
-    form:
-      h1_new: 'Добавить ответ к вопросу "%{title}"'
-      h1_edit: 'Изменить ответ у вопроса "%{title}"'
-      body: 'Ответ:'
-      correct: 'Правильный:'
-      submit: 'Сохранить'
-  progresses_page:
-    h1: 'Прохождение теста: %{title}'
-    button:
-      next_question: 'Следующий'
-    result_successful: 'Тест пройден, правильных ответов %{result} %'
-    result_unsuccessful: 'Тест не пройден, правильных ответов %{result} %'
+  tests:
+    index:
+      header: 'Все тесты:'
+      table:
+        title: 'Название'
+        category: 'Категория'
+        questions: 'Кол-во вопросов'
+        action: 'Действия'
+      button:
+        start: 'Пройти'
+      link:
+        add: 'Добавить тест'
+
+  admin:
+    answers:
+      show:
+        body: 'Ответ:'
+        correct: 'Правильный:'
+      new:
+        header_new: 'Добавить ответ к вопросу "%{title}"'
+      edit:
+        header_edit: 'Изменить ответ у вопроса "%{title}"'
+      link:
+        add: 'Добавить ответ'
+
+    questions:
+      index:
+        title: 'Список вопросов:'
+        table:
+          title: 'Название'
+          action: 'Действия'
+      new:
+        header_new: 'Добавить к тесту %{title} вопрос:'
+      edit:
+        header_edit: 'Изменить у теста %{title} вопрос:'
+      link:
+        add: 'Добавить вопрос'
+      show:
+        title: 'Тест: %{title}'
+        answers: 'Ответы:'
+
+  progresses:
+    show:
+      title: 'Прохождение теста: %{title}'
+      button:
+        next_question: 'Следующий'
+    result:
+      successful: 'Тест пройден, правильных ответов %{result} %'
+      unsuccessful: 'Тест не пройден, правильных ответов %{result} %'
   users_page:
     sign_up_message: 'Зарегистрироваться'
     reset_confirmation_message: 'Повторно отправить инструкции по подтверждению'
@@ -69,16 +89,6 @@ ru:
     confirm_password_message: 'нам нужен ваш текущий пароль, чтобы подтвердить ваши изменения'
     characters_minimum: 'минимально'
     cansel_account: 'Отменить мою учетную запись'
-    button:
-      back: 'Назад'
-      submit: 'Сохранить'
-    form:
-      login: 'Введите логин:'
-      email: 'Введите email:'
-      first_name: 'Введите имя:'
-      last_name: 'Введите фамилию:'
-      password: 'Введите пароль:'
-      password_confirmation: 'Повторите пароль:'
 
   footer:
     year: 'Год - %{year}'

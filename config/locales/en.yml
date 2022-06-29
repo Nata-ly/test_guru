@@ -1,63 +1,83 @@
 en:
-  hello: "Hello world"
+  helpers:
+    submit:
+      create: 'Create %{model}'
+      update: 'Update %{model}'
+      submit: 'Save %{model}'
+    label:
+      user:
+        login: 'Enter your login:'
+        email: 'Enter email:'
+        first_name: 'Enter first name:'
+        last_name: 'Enter last name:'
+        password: 'Enter password:'
+        password_confirmation: 'Confirm Password:'
+      test:
+        title: 'Title:'
+        level: 'Level:'
+        category_id: 'Category:'
+      answer:
+        body: 'Answer:'
+        correct: 'Correct:'
+      question:
+        body: 'Question:'
+    select:
+      promt: 'Please select'
+    link:
+      show: 'Show'
+      edit: 'Edit'
+      delete: 'Delete'
+      back: 'Back'
 
-  tests_page:
-    h1: 'All tests:'
-    table:
-      th_1: 'Tests'
-      th_2: 'Category'
-      th_3: 'Question count'
-      th_4: 'Action'
-    form:
-      title: 'Enter test name:'
-      select_category: 'Select a category:'
-    button:
-      add_test: 'Add new test'
-      delete_test: 'Delete'
-      submit_test: 'Save'
-      show_test: 'Show'
-      edit_test: 'Edit'
-      start_test: 'Start'
-      back: 'Back'
-  questions_page:
-    h2: 'List questions:'
-    correct: 'Correct:'
-    answer: 'Answer:'
-    table:
-      th_1: 'Question'
-      th_2: 'Action'
-    button:
-      add_question: 'Add question'
-      delete_question: 'Delete'
-      edit_question: 'Edit'
-      back: 'Back'
-    form:
-      h1_new: 'Add %{title} question'
-      h1_edit: 'Edit %{title} question'
-      body: 'Body:'
-      submit: 'Save'
-  questions_show_page:
-    h1: 'Test: %{title}'
-  answers_page:
-    h2: 'Answers:'
-    button:
-      add_answer: 'Add answer'
-      show_answer: 'Show'
-      delete_answer: 'Delete'
-      edit_answer: 'Edit'
-      back: 'Back'
-    form:
-      h1_new: 'Add answer to %{title}:'
-      h1_edit: 'Edit answer to %{title} ответ:'
-      body: 'Answer:'
-      correct: 'Correct:'
-      submit: 'Save'
-  progresses_page:
-    h1: 'Passing the %{title}'
-    button:
-      next_question: 'Next'
-    result_successful: 'Test passed, percentage of correct answers %{result}'
-    result_unsuccessful: 'Test failed, percentage of correct answers %{result}'
+  tests:
+    index:
+      header: 'All tests:'
+      table:
+        title: 'Name'
+        category: 'Category'
+        questions: 'Question count'
+        action: 'Action'
+      button:
+        start: 'Start'
+      link:
+        add: 'Add new test'
+
+  admin:
+    answers:
+      show:
+        body: 'Answer:'
+        correct: 'Correct:'
+      new:
+        header_new: 'Add answer to %{title}'
+      edit:
+        header_edit: 'Edit answer to %{title}'
+      link:
+        add: 'Add answer'
+
+    questions:
+      index:
+        title: 'List questions:'
+        table:
+          title: 'Title'
+          action: 'Action'
+      new:
+        header_new: 'Add %{title} question'
+      edit:
+        header_edit: 'Edit %{title} question'
+      link:
+        add: 'Add question'
+      show:
+        title: 'Test: %{title}'
+        answers: 'Answers:'
+
+  progresses:
+    show:
+      title: 'Passing the %{title}'
+      button:
+        next_question: 'Next'
+    result:
+      successful: 'Test passed, percentage of correct answers %{result} %'
+      unsuccessful: 'Test failed, percentage of correct answers %{result} %'
   users_page:
     sign_up_message: 'Sign up'
     reset_confirmation_message: 'Resend confirmation instructions'
@@ -69,16 +89,6 @@ en:
     confirm_password_message: 'we need your current password to confirm your changes'
     characters_minimum: 'characters minimum'
     cansel_account: 'Cancel my account'
-    button:
-      back: 'Back'
-      submit: 'Save'
-    form:
-      login: 'Enter your login:'
-      email: 'Enter email:'
-      first_name: 'Enter first name:'
-      last_name: 'Enter last name:'
-      password: 'Enter password:'
-      password_confirmation: 'Confirm Password:'
 
   footer:
     year: 'Year - %{year}'

@@ -8,6 +8,10 @@
     = form.text_area :title
 
   p
+    = form.label :level
+    = form.number_field :level, within: 0..10
+
+  p
     = form.label :category_id, t('tests_page.form.select_category')
     = form.collection_select :category_id, Category.all, :id, :title
 

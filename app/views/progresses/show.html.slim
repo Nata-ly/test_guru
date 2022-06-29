@@ -1,4 +1,4 @@
-h1 = t('progresses_page.h1', title: @progress.test.title)
+h1 = t('.title', title: @progress.test.title)
 
 p
   b = @progress.current_question.body
@@ -14,4 +14,4 @@ p
       = b.check_box id: "answer_ids_#{b.object.id}"
       = b.label
   p
-    = form.submit t('progresses_page.button.next_question')
+    = form.submit t('.button.next_question')

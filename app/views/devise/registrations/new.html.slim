@@ -4,22 +4,22 @@ h2 = t('users_page.sign_up_message')
   = render "devise/shared/error_messages", resource: resource
 
   .field
-    = f.label :email, t('users_page.form.email')
+    = f.label :email
     br
     = f.email_field :email, autofocus: true, autocomplete: "email"
 
   .field
-    = f.label :first_name, t('users_page.form.first_name')
+    = f.label :first_name
     br
     = f.text_field :first_name, autofocus: true, autocomplete: "first_name"
 
   .field
-    = f.label :last_name, t('users_page.form.last_name')
+    = f.label :last_name
     br
     = f.text_field :last_name, autofocus: true, autocomplete: "last_name"
 
   .field
-    = f.label :password, t('users_page.form.password')
+    = f.label :password
     - if @minimum_password_length
       em = " (#{@minimum_password_length} #{t('users_page.characters_minimum')})"
     br
@@ -27,7 +27,7 @@ h2 = t('users_page.sign_up_message')
 
 
   .field
-    = f.label :password_confirmation, t('users_page.form.password_confirmation')
+    = f.label :password_confirmation
     br
     = f.password_field :password_confirmation, autocomplete: "new-password"
 

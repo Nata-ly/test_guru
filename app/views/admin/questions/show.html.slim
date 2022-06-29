@@ -1,12 +1,12 @@
-h1 = t('questions_show_page.h1', title: @question.test.title)
+h1 = t('.title', title: @question.test.title)
 
-p = link_to t('answers_page.button.back'), admin_test_path(@question.test)
+p = link_to t('helpers.link.back'), admin_test_path(@question.test)
 
 h2 = @question.body
 
-p = t('answers_page.h2')
+p = t('.answers')
 
-p = link_to t('answers_page.button.add_answer'), new_admin_question_answer_path(@question)
+p = link_to t('admin.answers.link.add'), new_admin_question_answer_path(@question)
 
 ol
   = render @question.answers

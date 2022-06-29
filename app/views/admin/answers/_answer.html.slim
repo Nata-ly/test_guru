@@ -1,8 +1,8 @@
 li
   = answer.body
   br
-  = link_to t('answers_page.button.show_answer'), admin_answer_path(answer)
+  = link_to t('helpers.link.show'), admin_answer_path(answer)
   = ' | '
-  = link_to t('answers_page.button.edit_answer'), edit_admin_answer_path(answer)
+  = link_to t('helpers.link.edit'), edit_admin_answer_path(answer)
   = ' | '
-  = link_to t('answers_page.button.delete_answer'), admin_answer_path(answer), method: :delete
+  = link_to t('helpers.link.delete'), admin_answer_path(answer), method: :delete

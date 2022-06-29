@@ -1,0 +1,10 @@
+= form_with model: [:admin, @test, @question] do |form|
+  p
+    - if @question.present?
+      - @question.errors.full_messages.each do |message|
+        div = message
+  p
+    = form.label :body, t('questions_page.form.body')
+    = form.text_area :body
+
+  = form.submit value= t('questions_page.form.submit')

@@ -8,9 +8,17 @@ ru:
       th_2: 'Категория'
       th_3: 'Кол-во вопросов'
       th_4: 'Действия'
+    form:
+      title: 'Введите название теста:'
+      select_category: 'Выберите категорию:'
     button:
+      add_test: 'Добавить новый тест'
+      delete_test: 'Удалить'
+      submit_test: 'Сохранить'
       show_test: 'Показать'
+      edit_test: 'Изменить'
       start_test: 'Пройти'
+      back: 'Назад'
   questions_page:
     h2: 'Список вопросов:'
     table:
@@ -51,12 +59,24 @@ ru:
     result_successful: 'Тест пройден, правильных ответов %{result} %'
     result_unsuccessful: 'Тест не пройден, правильных ответов %{result} %'
   users_page:
+    sign_up_message: 'Зарегистрироваться'
+    reset_confirmation_message: 'Повторно отправить инструкции по подтверждению'
+    log_in_message: 'Войти'
+    remember_message: 'Запомнить меня'
+    edit_message: 'Изменить'
+    confirmation_message: 'В настоящее время ожидается подтверждение для:'
+    blank_password_edit: 'оставьте пустым, если не хотите его менять'
+    confirm_password_message: 'нам нужен ваш текущий пароль, чтобы подтвердить ваши изменения'
+    characters_minimum: 'минимально'
+    cansel_account: 'Отменить мою учетную запись'
     button:
       back: 'Назад'
       submit: 'Сохранить'
     form:
       login: 'Введите логин:'
       email: 'Введите email:'
+      first_name: 'Введите имя:'
+      last_name: 'Введите фамилию:'
       password: 'Введите пароль:'
       password_confirmation: 'Повторите пароль:'
 
@@ -74,3 +94,4 @@ ru:
   flash:
     message:
       login: 'Вы Guru? Залогиньтесь пожалуйста!'
+      after_create_flash: 'Привет, %{name}'

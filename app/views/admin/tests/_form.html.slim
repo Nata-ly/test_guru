@@ -1,0 +1,18 @@
+= form_with model: [:admin, @test], local: true do |form|
+  p
+    - if @test.present?
+      - @test.errors.full_messages.each do |message|
+        div = message
+  p
+    = form.label :title, t('tests_page.form.title')
+    = form.text_area :title
+
+  p
+    = form.label :level
+    = form.number_field :level, within: 0..10
+
+  p
+    = form.label :category_id, t('tests_page.form.select_category')
+    = form.collection_select :category_id, Category.all, :id, :title
+
+  = form.submit value = t('tests_page.button.submit_test')

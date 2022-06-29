@@ -1,4 +1,14 @@
 class User < ApplicationRecord
+  # Include default devise modules. Others available are:
+  # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
+  devise :database_authenticatable,
+         :registerable,
+         :recoverable,
+         :rememberable,
+         :trackable,
+         :validatable,
+         :confirmable
+
   has_many :progresses
   has_many :tests, through: :progresses
   has_many :written, class_name: :Test, inverse_of: :writer, foreign_key: :writer_id
@@ -7,15 +17,8 @@ class User < ApplicationRecord
 
   validates :email, presence: true, uniqueness: true
   validates_format_of :email, with: EMAIL_REGEX
-  validates :username, presence: true
-
-  has_secure_password
-
-  enum role: {
-    admin: 0,
-    user: 1,
-    archived: 2
-  }
+  validates :first_name, presence: true
+  validates :last_name, presence: true
 
   def passed_test(level)
     tests.where(level: level)
@@ -23,5 +26,9 @@ class User < ApplicationRecord
 
   def test_passage(test)
     progresses.order(id: :desc).find_by(test_id: test.id)
+  end
+
+  def admin?
+    is_a?(Admin)
   end
 end

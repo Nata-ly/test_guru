@@ -1,0 +1,14 @@
+h1 = @test.title
+
+p = link_to t('questions_page.button.back'), admin_tests_path	
+
+h2 = t('questions_page.h2')
+
+p = link_to t('questions_page.button.add_question'), new_admin_test_question_path(@test)
+
+table
+  tr
+    th = t('questions_page.table.th_1')
+    th colspan = "2" = t('questions_page.table.th_2')
+
+  = render @test.questions

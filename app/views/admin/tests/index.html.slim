@@ -1,0 +1,12 @@
+h1 = t('tests_page.h1')
+
+p = link_to t('tests_page.button.add_test'), new_admin_test_path
+
+table
+  tr
+    th = t('tests_page.table.th_1')
+    th = t('tests_page.table.th_2')
+    th = t('tests_page.table.th_3')
+    th colspan = "3" = t('tests_page.table.th_4')
+
+  = render @tests

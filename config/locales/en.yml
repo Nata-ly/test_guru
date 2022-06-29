@@ -8,9 +8,17 @@ en:
       th_2: 'Category'
       th_3: 'Question count'
       th_4: 'Action'
+    form:
+      title: 'Enter test name:'
+      select_category: 'Select a category:'
     button:
+      add_test: 'Add new test'
+      delete_test: 'Delete'
+      submit_test: 'Save'
       show_test: 'Show'
+      edit_test: 'Edit'
       start_test: 'Start'
+      back: 'Back'
   questions_page:
     h2: 'List questions:'
     correct: 'Correct:'
@@ -51,12 +59,24 @@ en:
     result_successful: 'Test passed, percentage of correct answers %{result}'
     result_unsuccessful: 'Test failed, percentage of correct answers %{result}'
   users_page:
+    sign_up_message: 'Sign up'
+    reset_confirmation_message: 'Resend confirmation instructions'
+    log_in_message: 'Log in'
+    remember_message: 'Remember me'
+    edit_message: 'Edit'
+    confirmation_message: 'Currently waiting confirmation for:'
+    blank_password_edit: "leave blank if you don't want to change it"
+    confirm_password_message: 'we need your current password to confirm your changes'
+    characters_minimum: 'characters minimum'
+    cansel_account: 'Cancel my account'
     button:
       back: 'Back'
       submit: 'Save'
     form:
       login: 'Enter your login:'
       email: 'Enter email:'
+      first_name: 'Enter first name:'
+      last_name: 'Enter last name:'
       password: 'Enter password:'
       password_confirmation: 'Confirm Password:'
 
@@ -74,3 +94,4 @@ en:
   flash:
     message:
       login: 'Are you Guru? Verify your Email and Password please!'
+      after_create_flash: 'Hello, %{name}'

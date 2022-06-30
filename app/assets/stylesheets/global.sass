@@ -8,3 +8,17 @@ body
 
 .content
   flex: 1 0 auto
+
+input[type=submit]
+  @extend .btn, .btn-primary
+
+input[type=text], input[type=password], input[type=email], input[type=email], textarea,
+input[type=number], select
+  @extend .form-control
+
+input[type=checkbox]
+  @extend .form-check-input
+
+.form-group
+  .field, .actions
+    margin-bottom: 10px

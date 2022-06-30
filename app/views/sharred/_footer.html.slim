@@ -1,10 +1,11 @@
-.footer-container
-  .col-1
-    = Rails.application.credentials[:footer][:autoor]
-    = ' | '
-    = github_url(Rails.application.credentials[:footer][:project_name], Rails.application.credentials[:footer][:repo])
-    br = t('footer.year', year: years_now)
-  .col-2
-    = t('footer.project_about')
-    br
-    = t('footer.thinknetica_html')
+footer class = 'pt-4 boorder-top'
+  .row
+    .col-12.col-md-5
+      = Rails.application.credentials[:footer][:autoor]
+      = ' | '
+      = github_url(Rails.application.credentials[:footer][:project_name], Rails.application.credentials[:footer][:repo])
+      br = t('footer.year', year: years_now)
+    .col-12.col-md-7
+      = t('footer.project_about')
+      br
+      = t('footer.thinknetica_html')

@@ -1,7 +1,11 @@
 module ApplicationHelper
+  def bootstrap_class_for(flash_type)
+    { success: "alert-success", error: "alert-danger", alert: "alert-warning", notice: "alert-info" }[flash_type.to_sym] || flash_type.to_s
+  end
+
   def flash_message
     flash.map do |key, msg|
-      content_tag :p, msg, :class => "flash #{key}"
+      content_tag :p, msg, :class => "flash #{bootstrap_class_for(key)}"
     end.join()
   end
 end

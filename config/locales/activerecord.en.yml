@@ -6,6 +6,7 @@ en:
       question: 'Question'
       answer: 'Answer'
       сategory: 'Category'
+      user: 'GURU'
     attributes:
       test:
         title: 'Title'

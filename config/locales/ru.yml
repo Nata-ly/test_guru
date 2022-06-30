@@ -97,6 +97,7 @@ ru:
   header:
     message:
       logged_in: 'Добро пожаловать, %{user} GURU'
+      link_admin: 'Интерфейс администратора'
       not_logged_in: 'Войти'
       login_exit: 'Выйти'
   error:

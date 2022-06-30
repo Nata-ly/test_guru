@@ -1,41 +1,47 @@
-h2 = "#{t('users_page.edit_message')} #{resource_name.to_s.humanize}"
+.row.justify-content-center
+  .col.col-md-4
+    h2 = "#{t('users_page.edit_message')} #{resource_name.to_s.humanize}"
 
-= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f|
-  = render "devise/shared/error_messages", resource: resource
+    .card.border-primary
+      .card-body
 
-  .field
-    = f.label :email, t('users_page.form.email')
-    br
-    = f.email_field :email, autofocus: true, autocomplete: "email"
+        = form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f|
+          = render "devise/shared/error_messages", resource: resource
+          .form-group
 
-  - if devise_mapping.confirmable? && resource.pending_reconfirmation?
-    .div = "#{t('users_page.confirmation_message')}#{resource.unconfirmed_email}"
+            .field
+              = f.label :email
+              br
+              = f.email_field :email, autofocus: true, autocomplete: "email"
 
-  .field
-    = f.label :password, t('users_page.form.password')
-    i = t('users_page.blank_password_edit')
-    br
-    = f.password_field :password, autocomplete: "new-password"
-    - if @minimum_password_length
-      br
-      em = " (#{@minimum_password_length} #{t('users_page.characters_minimum')})"
+            - if devise_mapping.confirmable? && resource.pending_reconfirmation?
+              .div = "#{t('users_page.confirmation_message')}#{resource.unconfirmed_email}"
 
-  .field
-    = f.label :password_confirmation, t('users_page.form.password_confirmation')
-    br
-    = f.password_field :password_confirmation, autocomplete: "new-password"
+            .field
+              = f.label :password
+              i = t('users_page.blank_password_edit')
+              br
+              = f.password_field :password, autocomplete: "new-password"
+              - if @minimum_password_length
+                br
+                em = " (#{@minimum_password_length} #{t('users_page.characters_minimum')})"
 
-  .field
-    = f.label :current_password,
-    i = "(#{t('users_page.confirm_password_message')})"
-    br
-    = f.password_field :current_password, autocomplete: "current-password"
+            .field
+              = f.label :password_confirmation
+              br
+              = f.password_field :password_confirmation, autocomplete: "new-password"
 
-  .actions
-    = f.submit t('users_page.button.submit')
+            .field
+              = f.label :current_password,
+              i = "(#{t('users_page.confirm_password_message')})"
+              br
+              = f.password_field :current_password, autocomplete: "current-password"
 
-h3 = t('users_page.cansel_account')
+            .actions
+              = f.submit
 
-= button_to t('users_page.cansel_account'), registration_path(resource_name), method: :delete
+        h3 = t('users_page.cansel_account')
 
-p = link_to t('users_page.button.back'), :back
+        = button_to t('users_page.cansel_account'), registration_path(resource_name), method: :delete
+
+        p = link_to t('users_page.button.back'), :back

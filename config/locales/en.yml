@@ -97,6 +97,7 @@ en:
   header:
     message:
       logged_in: 'Welcome %{user} GURU'
+      link_admin: 'Admin interface'
       not_logged_in: 'Logged in'
       login_exit: 'Exit'
   error:

@@ -1,14 +1,21 @@
-h2 = t('users_page.reset_confirmation_message')
+.row.justify-content-center
+  .col.col-md-4
+    h2 = t('users_page.reset_confirmation_message')
 
-= form_for(resource, as: resource_name, url: confirmation_path(resource_name), html: { method: :post }) do |f|
-  = render "devise/shared/error_messages", resource: resource
+    .card.border-primary
+      .card-body
 
-  .field
-    = f.label :email, t('users_page.form.email')
-    br
-    = f.email_field :email, autofocus: true, autocomplete: "email", value: (resource.pending_reconfirmation? ? resource.unconfirmed_email : resource.email)
+        = form_for(resource, as: resource_name, url: confirmation_path(resource_name), html: { method: :post }) do |f|
+          = render "devise/shared/error_messages", resource: resource
 
-  .actions
-    = f.submit t('users_page.button.submit')
+          .form-group
 
-= render "devise/shared/links"
+            .field
+              = f.label :email
+              br
+              = f.email_field :email, autofocus: true, autocomplete: "email", value: (resource.pending_reconfirmation? ? resource.unconfirmed_email : resource.email)
+
+            .actions
+              = f.submit
+
+        = render "devise/shared/links"

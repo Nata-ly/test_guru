@@ -6,6 +6,7 @@ ru:
       question: 'Вопрос'
       answer: 'Ответ'
       сategory: 'Категория'
+      user: 'GURU'
     attributes:
       test:
         title: 'Название'

@@ -1,5 +1,6 @@
-.header-container
-  .logo-block
-    = link_to image_tag('logo.png', border: 0), root_path
-  .user
+nav class = 'navbar'
+  = link_to image_tag('logo.png', border: 0), root_path, class: 'navbar-brand'
+  .navbar-text
+    = link_to t('header.message.link_admin'), admin_tests_path if current_user&.admin?
+  .navbar-text
     = authentication_message(current_user)

@@ -32,6 +32,7 @@ en:
   tests:
     index:
       header: 'All tests:'
+      show_gists: 'Show Gists'
       table:
         title: 'Name'
         category: 'Category'
@@ -43,6 +44,13 @@ en:
         add: 'Add new test'
 
   admin:
+    gists:
+      index:
+        title: 'Созданные Gists'
+        user: 'Пользователь'
+        link: 'Ссылка'
+        question: 'Вопрос'
+
     answers:
       show:
         body: 'Answer:'

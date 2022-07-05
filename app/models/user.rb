@@ -10,6 +10,7 @@ class User < ApplicationRecord
          :confirmable
 
   has_many :progresses
+  has_many :gists
   has_many :tests, through: :progresses
   has_many :written, class_name: :Test, inverse_of: :writer, foreign_key: :writer_id
 

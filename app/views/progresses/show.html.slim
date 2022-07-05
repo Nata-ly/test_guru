@@ -14,4 +14,6 @@ p
       = b.check_box id: "answer_ids_#{b.object.id}"
       = b.label
   p
+    = link_to t('.gist'), gist_progress_path(@progress), method: :post
+  p
     = form.submit t('.button.next_question')

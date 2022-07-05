@@ -73,11 +73,15 @@ en:
   progresses:
     show:
       title: 'Passing the %{title}'
+      gist: 'Gist Question'
       button:
         next_question: 'Next'
     result:
       successful: 'Test passed, percentage of correct answers %{result} %'
       unsuccessful: 'Test failed, percentage of correct answers %{result} %'
+    gist:
+      succes: "Gist save! <a href=\"%{url}\" target=\"_blank\">Show</a>"
+      failure: 'An error occurred while saving gist'
   users_page:
     sign_up_message: 'Sign up'
     reset_confirmation_message: 'Resend confirmation instructions'

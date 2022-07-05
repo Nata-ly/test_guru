@@ -5,7 +5,7 @@ module ApplicationHelper
 
   def flash_message
     flash.map do |key, msg|
-      content_tag :p, msg, :class => "flash #{bootstrap_class_for(key)}"
+      content_tag :p, msg.html_safe, :class => "flash #{bootstrap_class_for(key)}"
     end.join()
   end
 end

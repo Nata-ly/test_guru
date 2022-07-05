@@ -1,5 +1,5 @@
 class ProgressesController < ApplicationController
-  before_action :set_test_passage, only: %i[show result update]
+  before_action :set_test_passage, only: %i[show result update gist]
   def show
   end
 
@@ -14,6 +14,16 @@ class ProgressesController < ApplicationController
     else
       render :show
     end
+  end
+
+  def gist
+    result = GistQuestionService.new(@progress.current_question).call
+    flash_options = if result.html_url
+      { notice: "#{t('.succes', url: result.html_url)}" }
+    else
+      { alert: t('.failure') }
+    end
+    redirect_to @progress, flash_options
   end
 
   private

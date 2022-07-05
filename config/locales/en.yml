@@ -32,6 +32,7 @@ en:
   tests:
     index:
       header: 'All tests:'
+      show_gists: 'Show Gists'
       table:
         title: 'Name'
         category: 'Category'
@@ -43,6 +44,13 @@ en:
         add: 'Add new test'
 
   admin:
+    gists:
+      index:
+        title: 'Созданные Gists'
+        user: 'Пользователь'
+        link: 'Ссылка'
+        question: 'Вопрос'
+
     answers:
       show:
         body: 'Answer:'
@@ -69,10 +77,14 @@ en:
       show:
         title: 'Test: %{title}'
         answers: 'Answers:'
-
+  gists:
+    create:
+      succes: "Gist save! <a href=\"%{url}\" target=\"_blank\">Show</a>"
+      failure: 'An error occurred while saving gist'
   progresses:
     show:
       title: 'Passing the %{title}'
+      gist: 'Gist Question'
       button:
         next_question: 'Next'
     result:
@@ -106,3 +118,6 @@ en:
     message:
       login: 'Are you Guru? Verify your Email and Password please!'
       after_create_flash: 'Hello, %{name}'
+  gist_question_servise:
+    gist_params:
+      title: "A question about %{test} from TestGuru"

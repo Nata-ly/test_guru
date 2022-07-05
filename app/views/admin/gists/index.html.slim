@@ -1,0 +1,9 @@
+h1 = t('.title')
+p = link_to t('helpers.link.back'), admin_tests_path
+
+table
+  tr
+    th = t('.user')
+    th = t('.question')
+    th = t('.link')
+  = render @gists

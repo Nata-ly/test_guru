@@ -32,6 +32,7 @@ ru:
   tests:
     index:
       header: 'Все тесты:'
+      show_gists: 'Показать Gists'
       table:
         title: 'Название'
         category: 'Категория'
@@ -43,6 +44,13 @@ ru:
         add: 'Добавить тест'
 
   admin:
+    gists:
+      index:
+        title: 'Созданные Gists'
+        user: 'Пользователь'
+        link: 'Ссылка'
+        question: 'Вопрос'
+
     answers:
       show:
         body: 'Ответ:'
@@ -69,10 +77,15 @@ ru:
       show:
         title: 'Тест: %{title}'
         answers: 'Ответы:'
+  gists:
+    create:
+      succes: "Gist успешно сохранен! <a href=\"%{url}\" target=\"_blank\">Посмотреть</a>"
+      failure: 'Во время сохранения gist произошла ошибка'
 
   progresses:
     show:
       title: 'Прохождение теста: %{title}'
+      gist: 'Создать Gist'
       button:
         next_question: 'Следующий'
     result:
@@ -106,3 +119,6 @@ ru:
     message:
       login: 'Вы Guru? Залогиньтесь пожалуйста!'
       after_create_flash: 'Привет, %{name}'
+  gist_question_servise:
+    gist_params:
+      title: "Вопрос к тесту - %{test} TestGuru"

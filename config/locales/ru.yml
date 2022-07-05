@@ -106,3 +106,6 @@ ru:
     message:
       login: 'Вы Guru? Залогиньтесь пожалуйста!'
       after_create_flash: 'Привет, %{name}'
+  gist_question_servise:
+    gist_params:
+      title: "Вопрос к тесту - %{test} TestGuru"

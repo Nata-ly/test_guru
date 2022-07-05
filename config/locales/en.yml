@@ -106,3 +106,6 @@ en:
     message:
       login: 'Are you Guru? Verify your Email and Password please!'
       after_create_flash: 'Hello, %{name}'
+  gist_question_servise:
+    gist_params:
+      title: "A question about %{test} from TestGuru"

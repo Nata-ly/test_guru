@@ -16,17 +16,6 @@ class ProgressesController < ApplicationController
     end
   end
 
-  def gist
-    result = GistQuestionService.new(@progress.current_question).call
-    flash_options = if result.key?(:html_url)
-      { notice: "#{t('.succes', url: result.html_url)}" }
-    else
-      { alert: t('.failure') }
-    end
-    @progress.current_question.gists.create(user: current_user, url: result.html_url) if result.key?(:html_url)
-    redirect_to @progress, flash_options
-  end
-
   private
 
   def set_test_passage

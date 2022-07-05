@@ -77,6 +77,10 @@ ru:
       show:
         title: 'Тест: %{title}'
         answers: 'Ответы:'
+  gists:
+    create:
+      succes: "Gist успешно сохранен! <a href=\"%{url}\" target=\"_blank\">Посмотреть</a>"
+      failure: 'Во время сохранения gist произошла ошибка'
 
   progresses:
     show:
@@ -87,9 +91,6 @@ ru:
     result:
       successful: 'Тест пройден, правильных ответов %{result} %'
       unsuccessful: 'Тест не пройден, правильных ответов %{result} %'
-    gist:
-      succes: "Gist успешно сохранен! <a href=\"%{url}\" target=\"_blank\">Посмотреть</a>"
-      failure: 'Во время сохранения gist произошла ошибка'
   users_page:
     sign_up_message: 'Зарегистрироваться'
     reset_confirmation_message: 'Повторно отправить инструкции по подтверждению'

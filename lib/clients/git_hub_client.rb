@@ -9,6 +9,10 @@ class GitHubClient
     @http_client.create_gist(params.to_json)
   end
 
+  def status
+    @http_client.last_response.status
+  end
+
   private
 
   def setup_http_client

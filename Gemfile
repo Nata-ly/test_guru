@@ -10,6 +10,7 @@ gem 'octokit', '~>4.0'
 #UI
 gem 'bootstrap', '~> 5.1'
 gem 'jquery-rails'
+gem 'octicons_helper'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
 gem 'rails', '~> 6.1.6'

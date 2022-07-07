@@ -1,10 +1,14 @@
 h1 = t('.header')
 
 table
-  tr
-    th = t('.table.title')
-    th = t('.table.category')
-    th = t('.table.questions')
-    th = t('.table.action')
-
-  = render @tests
+  thead
+    tr
+      th class = 'sort-by-title pointer'
+        = t('.table.title')
+        = octicon 'arrow-up', class: 'text-success hide'
+        = octicon 'arrow-down', class: 'text-success hide'
+      th = t('.table.category')
+      th = t('.table.questions')
+      th = t('.table.action')
+  tbody
+    = render @tests

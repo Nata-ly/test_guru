@@ -4,10 +4,14 @@ p = link_to t('tests.index.link.add'), new_admin_test_path
 p = link_to t('tests.index.show_gists'), admin_gists_path
 
 table
-  tr
-    th = t('tests.index.table.title')
-    th = t('tests.index.table.category')
-    th = t('tests.index.table.questions')
-    th colspan = "3" = t('tests.index.table.action')
-
-  = render @tests
+  thead
+    tr
+      th class = 'sort-by-title pointer'
+        = t('tests.index.table.title')
+        = octicon 'arrow-up', class: 'text-success hide'
+        = octicon 'arrow-down', class: 'text-success hide'
+      th = t('tests.index.table.category')
+      th = t('tests.index.table.questions')
+      th colspan = "3" = t('tests.index.table.action')
+  tbody
+    = render @tests

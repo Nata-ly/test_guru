@@ -35,6 +35,9 @@ class Progress < ApplicationRecord
     result > SUCCESS_RATE
   end
 
+  def percentage_of_passing
+    (current_question_index * 100 / questions_count) unless questions_count.nil?
+  end
 
   private
 

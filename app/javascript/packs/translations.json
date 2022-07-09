@@ -1,0 +1,21 @@
+{
+  "en": {
+    "js": {
+      "tests": {
+        "link": {
+          "edit": "Edit",
+          "cancel": "Cancel"
+        }
+    }
+  }},
+  "ru": {
+    "js": {
+      "tests": {
+        "link": {
+          "edit": "Изменить",
+          "cancel": "Отмена"
+        }
+    }
+  }
+  }
+}

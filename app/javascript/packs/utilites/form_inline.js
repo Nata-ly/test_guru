@@ -28,10 +28,11 @@ function formInlineHandler(testId){
   if (formInline.classList.contains('hide')) {
     testTitle.classList.add('hide')
     formInline.classList.remove('hide')
-    link.textContent = 'Cansel'
+    link.textContent = i18n.t("js.tests.link.cancel")
+
   } else {
     testTitle.classList.remove('hide')
     formInline.classList.add('hide')
-    link.textContent = 'Edit'
+    link.textContent = i18n.t("js.tests.link.edit")
   }
 }

@@ -1,7 +1,5 @@
 = form_with model: [:admin, @question, @answer], local: true do |form|
-  - if @answer.present?
-    - @answer.errors.full_messages.each do |message|
-      div = message
+  p = render 'sharred/errors', resource: @answer
   p
     = form.label :body
     br

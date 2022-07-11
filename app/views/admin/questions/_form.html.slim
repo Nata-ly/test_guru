@@ -1,8 +1,6 @@
 = form_with model: [:admin, @test, @question] do |form|
   p
-    - if @question.present?
-      - @question.errors.full_messages.each do |message|
-        div = message
+    = render 'sharred/errors', resource: @question
   p
     = form.label :body
     = form.text_area :body

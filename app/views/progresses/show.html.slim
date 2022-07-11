@@ -17,3 +17,6 @@ p
     = link_to t('.gist'), progress_gists_path(@progress), method: :post
   p
     = form.submit t('.button.next_question')
+
+  .progress
+    .progress-bar role='progressbar' style='width: #{@progress.percentage_of_passing}%'

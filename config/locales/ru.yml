@@ -4,7 +4,11 @@ ru:
       create: 'Создать %{model}'
       update: 'Обновить %{model}'
       submit: 'Сохранить %{model}'
+      contacts:
+        submit: 'Отправить'
     label:
+      contact:
+        message: 'Сообщение:'
       user:
         login: 'Введите логин:'
         email: 'Введите email:'
@@ -102,7 +106,9 @@ ru:
     confirm_password_message: 'нам нужен ваш текущий пароль, чтобы подтвердить ваши изменения'
     characters_minimum: 'минимально'
     cansel_account: 'Отменить мою учетную запись'
-
+  contacts:
+    new:
+      title: 'Напишите нам'
   footer:
     year: 'Год - %{year}'
     project_about: 'Приложение преднозначено для создания, управления и выполнения различных тестов.'
@@ -113,12 +119,16 @@ ru:
       link_admin: 'Интерфейс администратора'
       not_logged_in: 'Войти'
       login_exit: 'Выйти'
+      link_contact: 'Напишите нам'
   error:
     rescue_with_test_not_found: 'Тест не найден'
   flash:
     message:
       login: 'Вы Guru? Залогиньтесь пожалуйста!'
       after_create_flash: 'Привет, %{name}'
+      contact_email:
+        success: 'Письмо отправлено'
+        fail: 'Ошибка. Сообщение не может быть пустым'
   gist_question_servise:
     gist_params:
       title: "Вопрос к тесту - %{test} TestGuru"

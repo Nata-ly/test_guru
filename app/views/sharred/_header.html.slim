@@ -3,4 +3,6 @@ nav class = 'navbar'
   .navbar-text
     = link_to t('header.message.link_admin'), admin_tests_path if current_user&.admin?
   .navbar-text
+    = link_to t('header.message.link_contact'), new_contacts_path
+  .navbar-text
     = authentication_message(current_user)

@@ -15,9 +15,9 @@ ruby = Category.find_or_create_by(title: 'Ruby')
 sybd = Category.find_or_create_by(title: 'СУБД')
 
 # Add tests
-html_test = html.tests.find_or_create_by(title: 'HTML', level: 1, writer: user1)
-ruby_test = ruby.tests.find_or_create_by(title: 'Начальный уровень', level: 0, writer: user1)
-sybd_test = sybd.tests.find_or_create_by(title: 'Основы баз данных', level: 1, writer: user1)
+html_test = html.tests.find_or_create_by(title: 'HTML', level: 1, writer: user1, visible: true)
+ruby_test = ruby.tests.find_or_create_by(title: 'Начальный уровень', level: 0, writer: user1, visible: true)
+sybd_test = sybd.tests.find_or_create_by(title: 'Основы баз данных', level: 1, writer: user1, visible: true)
 
 # Add answers and questions
 #html_test

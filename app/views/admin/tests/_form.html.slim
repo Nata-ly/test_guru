@@ -13,4 +13,8 @@
     = form.label :category_id
     = form.collection_select :category_id, Category.all, :id, :title, prompt: t('helpers.select.prompt')
 
+  p
+    = form.label :visible
+    = form.check_box :visible, id: :test_visible
+
   = form.submit

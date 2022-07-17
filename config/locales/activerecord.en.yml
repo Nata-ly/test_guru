@@ -13,6 +13,7 @@ en:
         category_id: 'Category'
         category: 'Category'
         level: 'Level'
+        visible: 'Visible'
       answers:
         body: 'Answer'
         correct: 'Correct'

@@ -6,7 +6,7 @@ ruby '3.1.2'
 gem 'net-smtp', require: false
 gem 'rails-i18n', '~> 6.0'
 gem 'octokit', '~>4.0'
-
+gem 'pg'
 #UI
 gem 'bootstrap', '~> 5.1'
 gem 'jquery-rails'
@@ -14,8 +14,6 @@ gem 'octicons_helper'
 gem "i18n-js", "~> 4.0.0.alpha1"
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
 gem 'rails', '~> 6.1.6'
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3', '~> 1.4'
 # Use Puma as the app server
 gem 'puma', '~> 5.0'
 # Use SCSS for stylesheets

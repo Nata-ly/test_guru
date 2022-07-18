@@ -137,6 +137,14 @@ GEM
     mini_mime (1.1.2)
     minitest (5.15.0)
     msgpack (1.5.2)
+    net-imap (0.2.3)
+      digest
+      net-protocol
+      strscan
+    net-pop (0.1.1)
+      digest
+      net-protocol
+      timeout
     net-protocol (0.1.3)
       timeout
     net-smtp (0.3.1)
@@ -145,6 +153,8 @@ GEM
       timeout
     nio4r (2.5.8)
     nokogiri (1.13.6-x86_64-darwin)
+      racc (~> 1.4)
+    nokogiri (1.13.6-x86_64-linux)
       racc (~> 1.4)
     octicons (17.3.0)
     octicons_helper (17.3.0)
@@ -155,6 +165,7 @@ GEM
       faraday (>= 1, < 3)
       sawyer (~> 0.9)
     orm_adapter (0.5.0)
+    pg (1.4.1)
     popper_js (2.9.3)
     public_suffix (4.0.7)
     puma (5.6.4)
@@ -242,7 +253,7 @@ GEM
       actionpack (>= 5.2)
       activesupport (>= 5.2)
       sprockets (>= 3.0.0)
-    sqlite3 (1.4.2)
+    strscan (3.0.1)
     temple (0.8.2)
     thor (1.2.1)
     tilt (2.0.10)
@@ -278,6 +289,8 @@ GEM
 
 PLATFORMS
   x86_64-darwin-19
+  x86_64-darwin-20
+  x86_64-linux
 
 DEPENDENCIES
   bootsnap (>= 1.4.4)
@@ -291,9 +304,12 @@ DEPENDENCIES
   jquery-rails
   letter_opener
   listen (~> 3.3)
+  net-imap
+  net-pop
   net-smtp
   octicons_helper
   octokit (~> 4.0)
+  pg
   puma (~> 5.0)
   rack-mini-profiler (~> 2.0)
   rails (~> 6.1.6)
@@ -303,7 +319,6 @@ DEPENDENCIES
   selenium-webdriver (>= 4.0.0.rc1)
   slim
   spring
-  sqlite3 (~> 1.4)
   turbolinks (~> 5)
   tzinfo-data
   web-console (>= 4.1.0)

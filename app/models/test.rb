@@ -12,6 +12,7 @@ class Test < ApplicationRecord
   scope :simple, -> { where(level: 0..1) }
   scope :medium, -> { where(level: 2..4) }
   scope :difficult, -> { where(level: 5..Float::INFINITY) }
+  scope :visible, -> { where(visible: true) }
 
   scope :with_category, ->(category_title) { joins(:category).where(category: { title: category_title }) }
   scope :by_title, -> { order(title: :desc) }

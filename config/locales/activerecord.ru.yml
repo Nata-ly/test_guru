@@ -13,6 +13,7 @@ ru:
         category_id: 'Категория'
         category: 'Категория'
         level: 'Уровень'
+        visible: 'Видимый'
       answers:
         body: 'Ответ'
         correct: 'Правильный'

@@ -1,0 +1,7 @@
+= form_with url: contacts_path, method: :post do |form|
+  p
+    = form.label :message, t('helpers.label.contact.message')
+    br
+    = form.text_area :message, rows: 7, cols: 60
+  p
+    = form.submit t('helpers.submit.contacts.submit')

@@ -1,14 +1,23 @@
-user1 = User.find_or_create_by(username: 'user1', email: 'email1@domen.ru', role: 0)
-user2 = User.find_or_create_by(username: 'user2', email: 'email2@domen.ru', role: 1)
+userpass = 'admin123456'
+user1 = User.new( first_name: 'John',
+                  last_name: 'Smith',
+                  email: 'nikifor1114@mail.ru',
+                  type: 'Admin',
+                  password: userpass,
+                  password_confirmation: userpass
+                )
+user1.skip_confirmation! #only if using confirmable in devise settings in user model.
+user1.save!
+
 # Add categories
 html = Category.find_or_create_by(title: 'HTML')
 ruby = Category.find_or_create_by(title: 'Ruby')
 sybd = Category.find_or_create_by(title: 'СУБД')
 
 # Add tests
-html_test = html.tests.find_or_create_by(title: 'HTML', level: 1, writer: user1)
-ruby_test = ruby.tests.find_or_create_by(title: 'Начальный уровень', level: 0, writer: user1)
-sybd_test = sybd.tests.find_or_create_by(title: 'Основы баз данных', level: 1, writer: user1)
+html_test = html.tests.find_or_create_by(title: 'HTML', level: 1, writer: user1, visible: true)
+ruby_test = ruby.tests.find_or_create_by(title: 'Начальный уровень', level: 0, writer: user1, visible: true)
+sybd_test = sybd.tests.find_or_create_by(title: 'Основы баз данных', level: 1, writer: user1, visible: true)
 
 # Add answers and questions
 #html_test
@@ -64,6 +73,6 @@ sybd_test_q3.answers.find_or_create_by(body: 'система средств ар
 
 Progress.find_or_create_by(user_id: user1.id, test_id: html_test.id)
 Progress.find_or_create_by(user_id: user1.id, test_id: sybd_test.id)
-Progress.find_or_create_by(user_id: user2.id, test_id: html_test.id)
-Progress.find_or_create_by(user_id: user2.id, test_id: sybd_test.id)
-Progress.find_or_create_by(user_id: user2.id, test_id: ruby_test.id)
+Progress.find_or_create_by(user_id: user1.id, test_id: html_test.id)
+Progress.find_or_create_by(user_id: user1.id, test_id: sybd_test.id)
+Progress.find_or_create_by(user_id: user1.id, test_id: ruby_test.id)

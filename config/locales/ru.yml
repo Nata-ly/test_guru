@@ -37,6 +37,7 @@ ru:
     index:
       header: 'Все тесты:'
       show_gists: 'Показать Gists'
+      show_badges: 'Показать Badge'
       table:
         title: 'Название'
         category: 'Категория'
@@ -48,6 +49,20 @@ ru:
         add: 'Добавить тест'
 
   admin:
+    badges:
+      new:
+        title: 'Добавить новый Badge'
+      index:
+        header: 'Настройка Badge'
+        link:
+          add: 'Добавить новый Badge'
+        title: 'Название'
+        rule_name: 'Тип'
+        rule_value: 'Параметры'
+        action: 'Действия'
+        category: 'Категория'
+        level: 'Уровень'
+        attempt: 'С первой попытки'
     gists:
       index:
         title: 'Созданные Gists'
@@ -120,6 +135,7 @@ ru:
       not_logged_in: 'Войти'
       login_exit: 'Выйти'
       link_contact: 'Напишите нам'
+      link_badges: 'Показать Badges'
   error:
     rescue_with_test_not_found: 'Тест не найден'
   flash:

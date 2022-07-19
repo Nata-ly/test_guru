@@ -37,6 +37,7 @@ en:
     index:
       header: 'All tests:'
       show_gists: 'Show Gists'
+      show_badges: 'Show Badge'
       table:
         title: 'Name'
         category: 'Category'
@@ -48,6 +49,20 @@ en:
         add: 'Add new test'
 
   admin:
+    badges:
+      new:
+        title: 'Add New Badge'
+      index:
+        header: 'Badge Settings'
+        link:
+          add: 'Add new Badge'
+        title: 'Title'
+        rule_name: 'Type'
+        rule_value: 'Settings'
+        action: 'Actions'
+        category: 'Category'
+        level: 'Level'
+        attempt: 'Attempt'
     gists:
       index:
         title: 'Созданные Gists'
@@ -120,6 +135,7 @@ en:
       not_logged_in: 'Logged in'
       login_exit: 'Exit'
       link_contact: 'Write to us'
+      link_badges: 'Show Badges'
   error:
     rescue_with_test_not_found: 'Not found'
   flash:

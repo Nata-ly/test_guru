@@ -1,0 +1,19 @@
+= form_with model: [:admin, @badge], local: true do |form|
+  p
+    = render 'sharred/errors', resource: @badge
+  p
+    = form.label :title
+    = form.text_area :title
+
+  p
+    = form.label :rule_name
+    = form.select(:rule_name, Badge.category.collect { |p| [ badge_category(p), p ] }, { include_blank: t('helpers.select.prompt') })
+  p
+    = form.label :rule_value
+    = form.text_field :rule_value
+
+  p
+    = form.label :image
+    = form.text_field :image
+
+  = form.submit

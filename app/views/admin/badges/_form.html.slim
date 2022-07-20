@@ -8,9 +8,10 @@
   p
     = form.label :rule_name
     = form.select(:rule_name, Badge.category.collect { |p| [ badge_category(p), p ] }, { include_blank: t('helpers.select.prompt') })
+
   p
     = form.label :rule_value
-    = form.text_field :rule_value
+    = form.grouped_collection_select :rule_value, [Test, Category], :all, :model_name, :id, :title
 
   p
     = form.label :image

@@ -2,8 +2,8 @@ document.addEventListener('turbolinks:load', function() {
   let control = document.querySelector('#badge_rule_name')
   if (control){
     rule_value_change()
-    $('#badge_rule_value').parent().hide()
     rule_value = $('#badge_rule_value').html()
+    filtrRuleValue()
     control.addEventListener('change', filtrRuleValue)
   }
 })

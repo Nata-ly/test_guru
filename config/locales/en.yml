@@ -43,6 +43,7 @@ en:
         category: 'Category'
         questions: 'Question count'
         action: 'Action'
+        level: 'Level'
       button:
         start: 'Start'
       link:

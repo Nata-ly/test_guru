@@ -5,6 +5,8 @@ class Progress < ApplicationRecord
 
   before_validation :before_validation_set_question, on: %i[create update]
 
+  scope :successful, -> { where(success: true) }
+
   SUCCESS_RATE = 85
 
   def completed?
@@ -15,6 +17,11 @@ class Progress < ApplicationRecord
     if correct_answer?(answer_ids)
       self.correct_questions += 1
     end
+    save!
+  end
+
+  def save_result
+    self.success = result_success?
     save!
   end
 

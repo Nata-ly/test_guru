@@ -13,4 +13,12 @@ module BadgesHelper
     end
     str
   end
+
+  def badge_image(badge)
+    if current_user.badges.include?(badge)
+      image_tag(badge.image.present? ? badge.image : 'badges/default.png')
+    else
+      image_tag(badge.image.present? ? badge.image : 'badges/default.png', class: 'filter')
+    end
+  end
 end

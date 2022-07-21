@@ -41,6 +41,7 @@ ru:
       table:
         title: 'Название'
         category: 'Категория'
+        level: 'Уровень:'
         questions: 'Кол-во вопросов'
         action: 'Действия'
       button:

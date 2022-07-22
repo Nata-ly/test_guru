@@ -49,9 +49,6 @@ class BadgeService
     return false unless badge.rule_value.to_i == @progress.test.id
     return false if @progress.user.tests.where(id: badge.rule_value).count > 1
 
-    # проверяем что тест проиден успешно
-    return false unless @progress.success
-
     true
   end
 end

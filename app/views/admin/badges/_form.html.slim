@@ -7,7 +7,7 @@
 
   p
     = form.label :rule_name
-    = form.select(:rule_name, Badge.category.collect { |p| [ badge_category(p), p ] }, { include_blank: t('helpers.select.prompt') })
+    = form.select(:rule_name, Badge::CATEGORY.collect { |p| [ badge_category(p), p ] }, { include_blank: t('helpers.select.prompt') })
 
   p
     = form.label :rule_value

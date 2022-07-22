@@ -4,7 +4,7 @@ class ProgressesController < ApplicationController
   end
 
   def result
-    BadgeService.new.call(@progress)
+    BadgeService.new.call(@progress) if @progress.success
   end
 
   def update

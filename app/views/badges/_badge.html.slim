@@ -1,0 +1,6 @@
+.col-md-2.col-xs-6
+  .badges
+    = badge_image(badge)
+    br
+    = badge.title
+    .count_badge = current_user.badges.where(id: badge.id).count

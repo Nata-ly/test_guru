@@ -1,0 +1,15 @@
+h1 = t('.header')
+
+p = link_to t('helpers.link.back'), admin_tests_path
+
+p = link_to t('.link.add'), new_admin_badge_path
+
+table
+  thead
+    tr
+      th = t('.title')
+      th = t('.rule_name')
+      th = t('.rule_value')
+      th colspan = "2" = t('.action')
+  tbody
+    = render @badges

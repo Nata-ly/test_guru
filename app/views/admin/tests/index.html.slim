@@ -2,6 +2,7 @@ h1 = t('tests.index.header')
 
 p = link_to t('tests.index.link.add'), new_admin_test_path
 p = link_to t('tests.index.show_gists'), admin_gists_path
+p = link_to t('tests.index.show_badges'), admin_badges_path
 
 p = render 'sharred/errors', resource: @test
 
@@ -13,6 +14,7 @@ table
         = octicon 'arrow-up', class: 'text-success hide'
         = octicon 'arrow-down', class: 'text-success hide'
       th = t('tests.index.table.category')
+      th = t('tests.index.table.level')
       th = t('tests.index.table.questions')
       th colspan = "3" = t('tests.index.table.action')
   tbody

@@ -9,10 +9,11 @@ class User < ApplicationRecord
          :validatable,
          :confirmable
 
-  has_many :progresses
+  has_many :progresses, dependent: :destroy
   has_many :gists
   has_many :tests, through: :progresses
   has_many :written, class_name: :Test, inverse_of: :writer, foreign_key: :writer_id
+  has_and_belongs_to_many :badges
 
   EMAIL_REGEX = /[A-ZА-я0-9._%+-]+@([A-zА-я0-9][-A-zА-я0-9]+\.)+[A-zА-я]{2,4}/i
 

@@ -4,12 +4,14 @@ class ProgressesController < ApplicationController
   end
 
   def result
+    BadgeService.new.call(@progress) if @progress.success
   end
 
   def update
     @progress.accept!(params[:answer_id] ||= [])
 
     if @progress.completed?
+      @progress.save_result
       redirect_to result_progress_path(@progress)
     else
       render :show

@@ -7,7 +7,13 @@ ru:
       answer: 'Ответ'
       сategory: 'Категория'
       user: 'GURU'
+      badge: 'Badge'
     attributes:
+      badge:
+        title: 'Название'
+        rule_name: 'Тип'
+        rule_value: 'Дополнительные параметры'
+        image: 'Ссылка на фото'
       test:
         title: 'Название'
         category_id: 'Категория'

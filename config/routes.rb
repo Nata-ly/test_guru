@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   devise_for :users, path: :gurus, path_names: { sign_in: :login, sign_out: :logout }, controllers: { registrations: 'users/registrations' }
 
   resource :contacts, only: %i[new create]
+  resources :badges, only: :index
 
   resources :tests, only: :index do
     member do
@@ -20,6 +21,7 @@ Rails.application.routes.draw do
 
   namespace :admin do
     resources :gists, only: :index
+    resources :badges, expect: :show
     resources :tests do
       patch :update_inline, on: :member
       resources :questions, shallow: true, expect: :index do

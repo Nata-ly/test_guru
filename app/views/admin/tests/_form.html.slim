@@ -17,4 +17,7 @@
     = form.label :visible
     = form.check_box :visible, id: :test_visible
 
+  p
+    = form.label :time_to_complete
+    = form.number_field :time_to_complete, min: 0
   = form.submit

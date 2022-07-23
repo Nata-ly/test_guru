@@ -20,6 +20,7 @@ en:
         title: 'Title:'
         level: 'Level:'
         category_id: 'Category:'
+        time_to_complete: 'Time in seconds'
       answer:
         body: 'Answer:'
         correct: 'Correct:'
@@ -42,6 +43,7 @@ en:
         title: 'Name'
         category: 'Category'
         questions: 'Question count'
+        time_to_complete: 'Time'
         action: 'Action'
         level: 'Level'
       button:

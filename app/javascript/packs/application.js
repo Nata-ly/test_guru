@@ -14,6 +14,7 @@ import './utilites/sorting'
 import './utilites/check_password_match'
 import './utilites/form_inline'
 import './badge_select'
+import './utilites/timer'
 
 Rails.start()
 Turbolinks.start()

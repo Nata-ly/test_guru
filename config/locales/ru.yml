@@ -20,6 +20,7 @@ ru:
         title: 'Название теста:'
         level: 'Уровень:'
         category_id: 'Категория:'
+        time_to_complete: 'Время в секундах'
       answer:
         body: 'Ответ:'
         correct: 'Правильный:'
@@ -43,6 +44,7 @@ ru:
         category: 'Категория'
         level: 'Уровень:'
         questions: 'Кол-во вопросов'
+        time_to_complete: 'Время:'
         action: 'Действия'
       button:
         start: 'Пройти'

@@ -46,6 +46,10 @@ class Progress < ApplicationRecord
     (current_question_index * 100 / questions_count) unless questions_count.nil?
   end
 
+  def time_has_passed
+    (Time.current - self.created_at).to_i
+  end
+
   private
 
   def before_validation_set_question

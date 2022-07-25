@@ -7,6 +7,8 @@ p
   = ' / '
   = @progress.questions_count
 
+.timer*{ 'data-time': @progress.test.time_to_complete - @progress.time_has_passed } = format_time(@progress.test.time_to_complete - @progress.time_has_passed)
+
 = form_with url: progress_path(@progress), local: true, method: :put do |form|
   = form.collection_check_boxes :answer_id, @progress.current_question.answers, :id, :body,
   include_hidden: false do |b|
@@ -16,7 +18,7 @@ p
   p
     = link_to t('.gist'), progress_gists_path(@progress), method: :post
   p
-    = form.submit t('.button.next_question')
+    = form.submit t('.button.next_question'), class: 'update-button'
 
   .progress
     .progress-bar role='progressbar' style='width: #{@progress.percentage_of_passing}%'

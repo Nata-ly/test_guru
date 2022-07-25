@@ -5,6 +5,7 @@ tr
   td = test.category.title
   td = test.level
   td = quentions_count(test)
+  td = format_time(test.time_to_complete)
   td = link_to t('helpers.link.show'), admin_test_path(test)
   td = link_to t('helpers.link.edit'), edit_admin_test_path(test),
               class: 'form-inline-link', data: { test_id: test.id }
